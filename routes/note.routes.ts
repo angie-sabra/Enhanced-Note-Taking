@@ -4,9 +4,9 @@ import { authMiddleware } from '../middlewares/auth';
 
 const router = express.Router();
 
-router.post('/create', authMiddleware, createNote);     
-router.post('/fetch', authMiddleware, searchNotes);     
-router.post('/update/:noteId', authMiddleware, updateNote); 
-router.post('/delete/:noteId', authMiddleware, deleteNote); 
+router.post('/ADD_NOTE', authMiddleware, createNote);     
+router.post('/GET_ALL_NOTES', authMiddleware, searchNotes);     
+router.post('/UPDATE_NOTE_BY_ID/:noteId', authMiddleware, updateNote); 
+router.post('/DELETE_NOTE_BY_ID/:noteId', authMiddleware, deleteNote); 
 
 export default router;
