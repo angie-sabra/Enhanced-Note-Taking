@@ -2,18 +2,14 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
-    "rootDir": "./",  
-    "outDir": "./dist",    // Compiled files will be in `dist`
+    "outDir": "./dist",  // Compiled JavaScript files go here
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "strict": true,
-    "typeRoots": [
-      "./types",
-      "./node_modules/@types"
-    ],
     "sourceMap": true
   },
-  "include": ["**/*.ts"],
+  "include": ["*.ts"],  // Assuming you have TS files in the root directory
   "exclude": ["node_modules"]
 }
+
